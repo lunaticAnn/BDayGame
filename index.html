@@ -56,10 +56,8 @@
         container.className = "unity-mobile";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
-        // config.devicePixelRatio = 1;
+        config.devicePixelRatio = 0.3;
         mobileWarning.style.display = "block";
-		canvas.style.width = "400px";
-		canvas.style.height = "640px";
         setTimeout(() => {
           mobileWarning.style.display = "none";
         }, 5000);
